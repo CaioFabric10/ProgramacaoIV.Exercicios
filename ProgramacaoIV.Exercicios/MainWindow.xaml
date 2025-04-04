@@ -1,0 +1,132 @@
+﻿<Window x:Class="ProgramacaoIV.Exercicios.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgramacaoIV.Exercicios"
+        mc:Ignorable="d"
+        Title="Atividades" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="45" />
+            <RowDefinition Height="45" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Button
+            x:Name="btnExercicioUm"
+            Grid.Column="0"
+            Grid.Row="1"
+            Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+            Width="145"
+            ToolTip="Soma de Dois Números (Inteiros)"
+            Content="Exercício 1"
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+            Click="btnExercicioUm_Click"/>
+        <Button
+            x:Name="btnExercicioDois"
+            Grid.Column="0"
+            Grid.Row="2"
+            Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+            Width="145"
+            ToolTip="Conversor de Temperatura"
+            Content="Exercício 2"
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+            Click="btnExercicioDois_Click"/>
+        <Button
+            x:Name="btnExercicioTres"
+            Grid.Column="1"
+            Grid.Row="1"
+            Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+            Width="145"
+            ToolTip="Dias até o próximo aniversário"
+            Content="Exercício 3"
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+            Click="btnExercicioTres_Click"/>
+        <Button
+            x:Name="btnExercicioQuatro"
+            Grid.Column="1"
+            Grid.Row="2"
+            Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+            Width="145"
+            ToolTip="Maioridade"
+            Content="Exercício 4"
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+            Click="btnExercicioQuatro_Click"/>
+        <Button
+            x:Name="btnExercicioCinco"
+            Grid.Column="2"
+            Grid.Row="1"
+            Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+            Width="145"
+            ToolTip="Exibir descrição de Enum"
+            Content="Exercício 5"
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+            Click="btnExercicioCinco_Click"/>
+        <Button
+            x:Name="btnExercicioSeis"
+            Grid.Column="2"
+            Grid.Row="2"
+            Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+            Width="145"
+            ToolTip="Contador de Cliques"
+            Content="Exercício 6"
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+            Click="btnExercicioSeis_Click"/>
+        <Button
+            x:Name="btnExercicioSete"
+            Grid.Column="3"
+            Grid.Row="1"
+            Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+            Width="145"
+            ToolTip="Simulador de Pagamento Parcelado"
+            Content="Exercício 7"
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+            Click="btnExercicioSete_Click"/>
+        <Button
+            x:Name="btnExercicioOito"
+            Grid.Column="3"
+            Grid.Row="2"
+            Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+            Width="145"
+            ToolTip="Verificar Dia da Semana"
+            Content="Exercício 8"
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+            Click="btnExercicioOito_Click"/>
+        <Button
+            x:Name="btnExercicioNove"
+            Grid.Column="4"
+            Grid.Row="1"
+            Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+            Width="145"
+            ToolTip="Interruptor Liga/Desliga"
+            Content="Exercício 9"
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+            Click="btnExercicioNove_Click"/>
+        <Button
+            x:Name="btnExercicioDez"
+            Grid.Column="4"
+            Grid.Row="2"
+            Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+            Width="145"
+            ToolTip="Sorteio aleatório de 1 a 6"
+            Content="Exercício 10"
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+            Click="btnExercicioDez_Click"/>
+
+
+
+
+    </Grid>
+    
+</Window>

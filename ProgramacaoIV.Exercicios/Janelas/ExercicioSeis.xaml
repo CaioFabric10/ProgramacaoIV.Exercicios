@@ -1,0 +1,27 @@
+﻿<Window x:Class="ProgramacaoIV.Exercicios.Janelas.ExercicioSeis"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Exercício 6 - Contador de Cliques" Height="400" Width="400"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Background="WhiteSmoke">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="45" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Button
+            x:Name="btnContar"
+            Grid.Row="1"
+            Content="Clique Aqui"
+            Margin="8"
+            Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+            ToolTip="Contador de cliques"
+            Click="btnContar_Click" />
+    </Grid>
+</Window>

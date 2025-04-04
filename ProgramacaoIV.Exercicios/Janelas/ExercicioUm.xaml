@@ -1,0 +1,47 @@
+﻿<Window x:Class="ProgramacaoIV.Exercicios.Janelas.ExercicioUm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgramacaoIV.Exercicios.Janelas"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Exercicio 1" Height="400" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="WhiteSmoke">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" MaxHeight="50"/>
+            <RowDefinition Height="45" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBox
+            Grid.Row="1"
+            x:Name="txtValorUm"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            materialDesign:HintAssist.Hint="Insira um valor inteiro"          
+            Margin="8"
+            VerticalAlignment="Bottom" />
+
+        <TextBox
+            Grid.Row="2"
+            x:Name="txtValorDois"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            materialDesign:HintAssist.Hint="Insira outro valor inteiro"          
+            Margin="8"
+            VerticalAlignment="Bottom" />
+
+        <Button
+            x:Name="btnSomar"            
+            Grid.Row="4"
+            Margin="3"
+            Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"            
+            ToolTip="Soma de Dois Números (Inteiros)"
+            Content="Somar"
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+            Click="btnSomar_Click"/>
+    </Grid>
+</Window>
