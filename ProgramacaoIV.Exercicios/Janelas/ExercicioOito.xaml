@@ -17,11 +17,13 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
+
         <DatePicker
             Grid.Row="1"
             x:Name="dtpData"
             Margin="8"
             VerticalAlignment="Bottom"
+            materialDesign:HintAssist.Hint="Selecione uma data"
             Style="{StaticResource MaterialDesignDatePicker}" />
 
         <Button
